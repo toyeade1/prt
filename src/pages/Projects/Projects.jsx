@@ -21,7 +21,7 @@ const projects = [
     src: "tree.jpg",
     link: "https://i.postimg.cc/J75CKyrs/Annotation-2025-04-01-203959.png",
     color: "#8f89ff",
-    githubLink: "https://github.com/seraprogrammer/portfolio",
+    githubLink: "https://github.com/toyeade1/portfolio",
     liveLink: "https://codervai.vercel.app",
   },
   {
@@ -31,7 +31,7 @@ const projects = [
     src: "water.jpg",
     link: "https://i.postimg.cc/J4jPVFY0/Annotation-2025-04-01-204723.png",
     color: "#fff",
-    githubLink: "https://github.com/seraprogrammer/codewhisperer",
+    githubLink: "https://github.com/toyeade1/codewhisperer",
     liveLink: "https://codewhisperer.vercel.app/",
   },
   {
@@ -41,7 +41,7 @@ const projects = [
     src: "house.jpg",
     link: "https://i.postimg.cc/cHQr4fpR/Annotation-2025-04-01-205350.png",
     color: "#ed649e",
-    githubLink: "https://github.com/seraprogrammer/CodeKori",
+    githubLink: "https://github.com/toyeade1/CodeKori",
     liveLink: "https://codekori.js.org",
   },
 ];

@@ -6,6 +6,7 @@ import Meteors from "@/components/ui/meteors";
 import PortfolioPage from "@/pages/About/About";
 import SparklesText from "@/components/ui/sparkles-text";
 import { FlipWords } from "@/components/ui/flip-words";
+import oilPaintImage from "@/assets/images/oil-paintings/oil-paint-3.jpg";
 
 // Grid Background - Replacing the HexagonBackground
 const GridBackground = () => {
@@ -42,16 +43,21 @@ const GridBackground = () => {
 
 export default function Hero() {
   const words = [
-    "Full-Stack Developer & UI/UX Enthusiast",
-    "JavaScript Developer & Creator of Olova.js",
-    "Learning MARN Stack",
-    "Linux & GitHub for DevOps Enthusiast",
+    "Full-Stack Web Developer",
+    "Soon to be Pickleball Hall of Famer",
+    "UI/UX Designer",
+    "Roblox Game Developer",
+    "Godfather of Many Pets",
+    "Nature Enthusiast",
+    "Mobile Developer",
+    "Serial Start-a-Show-and-Never-Finish-It Offender"
+
   ];
 
   const [code] = useState(`
 const profile = {
-    name: 'Nazmul Hossain',
-    title: 'Full-Stack Developer | Cloud Enthusiast | Problem Solver',
+    name: 'Toye Adesomoju',
+    title: 'Full-Stack Web Developer',
     skills: [
         'React', 'NextJS', 'Redux', 'Express',
         'MySQL', 'MongoDB', 'Docker', 'AWS', 'TypeScript',
@@ -60,13 +66,15 @@ const profile = {
     hardWorker: true,
     quickLearner: true,
     problemSolver: true,
-    yearsOfExperience: 4, 
+    fanOfBarouqueArt: true,
+    yearsOfExperience: 2.5, 
     hireable: function() {
         return (
             this.hardWorker &&
             this.problemSolver &&
             this.skills.length >= 5 &&
-            this.yearsOfExperience >= 3
+            this.yearsOfExperience >= 2 &&
+            this.fanOfBarouqueArt
         );
     }
 };
@@ -138,12 +146,23 @@ const profile = {
       <main className="bg-[#020617] text-white min-h-screen">
         <section
           className="hero min-h-screen flex items-center justify-center relative px-4 sm:px-6 lg:px-8 py-10 md:py-16 lg:py-0 hero-section-padding"
-          style={{ paddingTop: "var(--hero-padding-top, 0)" }}
+          style={{ 
+            paddingTop: "var(--hero-padding-top, 0)",
+            position: 'relative',
+            overflow: 'hidden'
+          }}
         >
-          <div className="absolute inset-0"></div>
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-fixed"
+            style={{
+              backgroundImage: `url(${oilPaintImage})`,
+            }}
+          >
+            <div className="absolute inset-0"></div>
+          </div>
 
           {/* Choose one of these background options */}
-          <GridBackground />
+          {/* <GridBackground /> */}
 
           {/* Or keep the original backgrounds if you prefer */}
           {/* <HexagonBackground /> */}
@@ -151,9 +170,9 @@ const profile = {
           {/* <DotBackground /> */}
 
           {/* Meteors Effect */}
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          {/* <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <Meteors number={10} />
-          </div>
+          </div> */}
 
           {/* Main content container */}
           <div
@@ -190,7 +209,7 @@ const profile = {
                     I&apos;m
                     <span className="typing-effect gradient-text">
                       {" "}
-                      Nazmul Hossain
+                      Toye Adesomoju
                     </span>
                   </span>
                 </h1>
@@ -198,7 +217,7 @@ const profile = {
               </div>
 
               {/* Role badge */}
-              <div className="inline-flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 rounded-xl sm:rounded-2xl bg-gradient-to-r from-blue-500/10 to-teal-500/10 border border-blue-500/20 mb-6 sm:mb-8 backdrop-blur-sm animate__animated animate__fadeInUp animate__delay-1s">
+              <div className="inline-flex items-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-3 rounded-xl sm:rounded-2xl bg-gradient-to-r from-brown-500/10 to-teal-500/10 border border-brown-500/20 mb-6 sm:mb-8 backdrop-blur-md animate__animated animate__fadeInUp animate__delay-1s">
                 <i className="fas fa-rocket text-blue-400 animate-bounce text-sm sm:text-base"></i>
                 <span>
                   <FlipWords
@@ -220,7 +239,7 @@ const profile = {
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 animate__animated animate__fadeInUp animate__delay-2s">
                 {/* View Projects Button */}
                 <a
-                  href="https://github.com/seraprogrammer"
+                  href="https://github.com/toyeade1"
                   className="group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-blue-500 to-teal-400 p-0.5 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#60A5FA]"
                 >
                   <span className="block w-full px-6 sm:px-8 py-3 sm:py-4 rounded-[11px] bg-gray-900 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-teal-400">
