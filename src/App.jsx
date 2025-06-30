@@ -22,8 +22,8 @@ export default function App() {
         <>
           <Hero />
           <Skills />
-          <Experience />
-          <Education />
+          {/* <Experience />
+          <Education /> */}
           <Contact />
         </>
       ) : (
@@ -31,8 +31,8 @@ export default function App() {
         <Routes>`
           <Route path="/" element={<Hero />} />
           <Route path="/skills" element={<Skills />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/education" element={<Education />} />
+          {/* <Route path="/experience" element={<Experience />} />
+          <Route path="/education" element={<Education />} /> */}
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>

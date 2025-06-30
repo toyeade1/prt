@@ -2,7 +2,7 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import IconCloudDemo from "@/components/globe";
-import { Code2, Paintbrush, Database, Layout, Cpu, Cloud } from "lucide-react";
+import { Code2, Paintbrush, Database, Cpu, Cloud, Gamepad } from "lucide-react";
 import {
   FaReact,
   FaNodeJs,
@@ -10,7 +10,6 @@ import {
   FaDocker,
   FaGitAlt,
   FaLinux,
-  FaFigma,
   FaAws,
 } from "react-icons/fa";
 import {
@@ -126,26 +125,6 @@ const SkillsSection = () => {
       ],
     },
     {
-      icon: Layout,
-      title: "UI/UX Design",
-      color: "text-purple-400",
-      skills: [
-        { name: "Figma", icon: <FaFigma className="w-4 h-4 text-[#F24E1E]" /> },
-        {
-          name: "Responsive Design",
-          icon: <Layout className="w-4 h-4 text-[#38B2AC]" />,
-        },
-        {
-          name: "Wireframing",
-          icon: <BsGrid1X2 className="w-4 h-4 text-[#9CA3AF]" />,
-        },
-        {
-          name: "Prototyping",
-          icon: <MdAnimation className="w-4 h-4 text-[#F59E0B]" />,
-        },
-      ],
-    },
-    {
       icon: Cloud,
       title: "Cloud & DevOps",
       color: "text-orange-400",
@@ -191,6 +170,29 @@ const SkillsSection = () => {
       icon: Paintbrush,
       title: "Creative Skills",
       color: "text-yellow-400",
+      skills: [
+        {
+          name: "UI Animation",
+          icon: <MdAnimation className="w-4 h-4 text-[#FF4081]" />,
+        },
+        {
+          name: "SVG Animation",
+          icon: <MdAnimation className="w-4 h-4 text-[#00C853]" />,
+        },
+        {
+          name: "3D Modeling",
+          icon: <Cpu className="w-4 h-4 text-[#7C4DFF]" />,
+        },
+        {
+          name: "Motion Graphics",
+          icon: <MdAnimation className="w-4 h-4 text-[#FF6D00]" />,
+        },
+      ],
+    },
+    {
+      icon: Gamepad,
+      title: "Game Development",
+      color: "text-brown-400",
       skills: [
         {
           name: "UI Animation",

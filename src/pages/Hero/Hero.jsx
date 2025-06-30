@@ -51,7 +51,6 @@ export default function Hero() {
     "Nature Enthusiast",
     "Mobile Developer",
     "Serial Start-a-Show-and-Never-Finish-It Offender"
-
   ];
 
   const [code] = useState(`
@@ -59,9 +58,9 @@ const profile = {
     name: 'Toye Adesomoju',
     title: 'Full-Stack Web Developer',
     skills: [
-        'React', 'NextJS', 'Redux', 'Express',
-        'MySQL', 'MongoDB', 'Docker', 'AWS', 'TypeScript',
-        'GraphQL', 'Git', 'Linux', 'Discord Development'
+        'React', 'NextJS', 'TypeScript/JavaScript', 'Lua', 'Java',
+        'MySQL', 'MongoDB', 'Docker', 'AWS', 'TypeScript', 'Swift',
+        'GraphQL', 'Git', 'REST', 'Python', 'Playwright', 'Angular'
     ],
     hardWorker: true,
     quickLearner: true,
@@ -197,7 +196,7 @@ const profile = {
               <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 mb-6 sm:mb-8 animate__animated animate__fadeInDown animate__delay-1s">
                 <div className="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></div>
                 <span className="text-gray-300 text-xs sm:text-sm font-medium">
-                  Welcome to my universe
+                  :)
                 </span>
               </div>
 
@@ -228,12 +227,12 @@ const profile = {
               </div>
 
               {/* Description */}
-              <div className="relative mb-8 sm:mb-12 max-w-xl">
-                <p className="text-base sm:text-xl text-gray-300/90 leading-relaxed">
+              {/* <div className="relative mb-8 sm:mb-12 max-w-xl">
+                <p className="text-base sm:text-xl text-black/90 leading-relaxed">
                   JavaScript lover 🚀 | OlovaJS creator 🔧 | Crafting frameworks
                   and coding the future 💻✨
                 </p>
-              </div>
+              </div> */}
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 animate__animated animate__fadeInUp animate__delay-2s">
@@ -265,12 +264,12 @@ const profile = {
               </div>
 
               {/* Floating badges */}
-              <div className="hidden lg:block absolute left-[5.5rem] top-[2.3rem] animate-float-slow">
+              {/* <div className="hidden lg:block absolute left-[5.5rem] top-[2.3rem] animate-float-slow">
                 <div className="px-4 py-2 rounded-lg bg-purple-500/10 backdrop-blur-sm border border-purple-500/20 text-purple-400">
                   <i className="fas fa-wand-magic-sparkles"></i>&nbsp;&nbsp;UI
                   Magic
                 </div>
-              </div>
+              </div> */}
               <div className="hidden lg:block absolute right-10 top-20 animate-float">
                 <div className="px-4 py-2 rounded-lg bg-blue-500/10 backdrop-blur-sm border border-blue-500/20 text-blue-400">
                   <i className="fas fa-code"></i>&nbsp;&nbsp;Clean Code
@@ -307,7 +306,7 @@ const profile = {
 
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce flex flex-col items-center gap-2">
-          <span className="text-gray-400 text-sm flex items-center gap-2">
+          <span className="text-white text-sm flex items-center gap-2">
             <i className="fas fa-mouse text-blue-400"></i>
             About me
           </span>

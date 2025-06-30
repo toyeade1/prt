@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Send, Phone, MapPin, Mail } from "lucide-react";
+import oilPaintImage from "@/assets/images/oil-paintings/oil-paint-4.jpg";
+
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -88,13 +90,16 @@ export default function Contact() {
 
   return (
     <main
-      className="pt-20 lg:pt-[0rem] bg-[#04081A]
- text-white min-h-screen"
+      className="pt-20 lg:pt-[0rem] absolute inset-0 bg-cover bg-center bg-fixed"
+      style={{
+        backgroundImage: `url(${oilPaintImage})`,
+      }}
     >
       <section className="hero min-h-screen flex items-center relative px-4 sm:px-6 lg:px-8">
         <div className="container mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Contact Info */}
+            <div className="backdrop-blur-lg bg-[#020617] p-8 rounded-2xl shadow-xl">
             <div className="space-y-8">
               <div>
                 <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
@@ -112,7 +117,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <p className="text-gray-400">olovajs@gmail.com</p>
+                    <p className="text-gray-400">aadesomoju001@gmail.com</p>
                   </div>
                 </div>
 
@@ -122,14 +127,15 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold">Location</h3>
-                    <p className="text-gray-400">Laxmipure, Natore 6400</p>
+                    <p className="text-gray-400">Atlanta, Georgia, USA</p>
                   </div>
                 </div>
               </div>
             </div>
+            </div>
 
             {/* Contact Form */}
-            <div className="backdrop-blur-lg bg-white/5 p-8 rounded-2xl shadow-xl">
+            <div className="backdrop-blur-lg bg-[#020617] p-8 rounded-2xl shadow-xl">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 gap-6">
                   <div>

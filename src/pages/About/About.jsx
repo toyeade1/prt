@@ -6,7 +6,7 @@ export default function About() {
       <section id="about" className="py-16 md:py-32  text-white bg-[#04081A]">
         <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-16">
           <h2 className="relative z-10 max-w-xl text-4xl font-medium lg:text-5xl text-white">
-            I like to build...And hopefully not break things
+            I like to build...and hopefully not break things
           </h2>
           <div className="grid gap-6 sm:grid-cols-2 md:gap-12 lg:gap-24">
             <div className="relative mb-6 sm:mb-0">
@@ -33,8 +33,8 @@ export default function About() {
                  which has lead me in all sorts of directions.
                 {" "}
                 <span className="font-bold text-white">
-                  Including Game Development, where I co-developed a game called
-                  Squiddy that has amassed over 64 million plays👾.
+                  Including Game Development, where I co-developed a game called{" "}
+                  <a href="https://www.roblox.com/games/111957948752684/FIGHT-Squiddy-Game" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">Squiddy</a> that has amassed over 64 million plays👾.
                 </span>
               </p>
               <p className="text-white">

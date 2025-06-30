@@ -15,22 +15,22 @@ const EducationSection = () => {
 
   const educationData = [
     {
-      degree: "Secondary School Certificate (SSC)",
-      school: "Natore Textile Institute",
-      mascot: "📘",
-      year: "2019-2021",
+      degree: "Georgia Institute of Technology",
+      school: "Computer Science",
+      mascot: "🐝",
+      year: "2025-2027",
       achievements: ["GPA: 4.89", "Subject: Science"],
       skills: ["Mathematics", "Physics", "Chemistry", "Biology"],
       description:
         "Focused on core science subjects with emphasis on practical laboratory work and scientific research methodologies.",
     },
     {
-      degree: "Higher Secondary Certificate (HSC)",
-      school: "Dottopara Model Degree College",
-      mascot: "📗",
-      year: "2021-2023",
+      degree: "Georgia State University",
+      school: "Computer Information Science",
+      mascot: "🐆",
+      year: "2018-2022",
       achievements: ["GPA: 4.25", "Subject: Arts"],
-      skills: ["Literature", "Social Studies", "Economics", "History"],
+      skills: ["Mathematics", "Data Structures", "Data Science", "Data Analytics", "Data Visualization"],
       description:
         "Developed strong analytical and critical thinking skills through comprehensive study of humanities and social sciences.",
     },
@@ -77,10 +77,7 @@ const EducationSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent mb-6">
             Educational Journey
           </h2>
-          <p className="text-gray-300 max-w-2xl mx-auto text-lg">
-            Discover how academic excellence shapes innovative thinking and
-            professional growth.
-          </p>
+
         </motion.div>
 
         <motion.div
